@@ -1,0 +1,23 @@
+{
+    "name": "MediaStream video resizer",
+    "version": "0.2.1",
+    "description": "Resize video tracks in MediaStreams",
+    "main": "dist.es/videoresize.js",
+    "scripts": {
+        "build": "tsc -p tsconfig.es.json && tsc -p tsconfig.browser.json && tsc -p tsconfig.commonjs.json"
+    },
+    "author": "Daniil Makeev <daniil-makeev@yandex.ru>",
+    "license": "ISC",
+    "devDependencies": {
+        "typescript": "^4.3.4"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dmakeev/js-video-resizer.git"
+    },
+    "bugs": {
+        "url": "https://github.com/dmakeev/js-video-resizer/issues"
+    },
+    "homepage": "https://github.com/dmakeev/js-video-resizer#readme",
+    "keywords": ["video", "resize", "browser", "frontend", "MediaStream", "MediaStreamTrack", "VideoTrack", "change FPS"]
+}

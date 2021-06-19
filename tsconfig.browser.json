@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "outDir": "./dist.browser",
+        "module": "none",
+        "target": "es5",
+        "lib": ["es2016", "dom", "es5"]
+    },
+    "include": ["./src/**/*"]
+}
