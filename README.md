@@ -13,8 +13,8 @@ npm i mediastream-video-resizer
 
 ### Usage
 ```javascript
-const VideoResizerClass = require('mediastream-video-resizer');
-const videoResizer = new VideoResizerClass();
+const { VideoResizer } = require('mediastream-video-resizer');
+const videoResizer = new VideoResizer();
 
 // Start the resize - create a new MediaStream with the video track resized to 400x300px with 15fps
 // 'userVideo' is just an identifier, used in videoResizer.stop()

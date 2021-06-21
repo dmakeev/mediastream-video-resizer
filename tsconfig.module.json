@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "strict": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "sourceMap": true,
+        "outDir": "dist.module",
+        "declaration": true,
+        "lib": ["es2016", "dom"]
+    },
+    "include": ["src/**/*.ts"]
+}

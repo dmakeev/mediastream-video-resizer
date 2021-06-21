@@ -1,5 +1,4 @@
 node_modules
-dist.es
-dist.commonjs
+dist.module
 dist.browser
 package-lock.json
