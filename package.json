@@ -1,10 +1,12 @@
 {
-    "name": "MediaStream video resizer",
-    "version": "0.2.1",
+    "name": "mediastream-video-resizer",
+    "version": "0.2.2",
     "description": "Resize video tracks in MediaStreams",
     "main": "dist.es/videoresize.js",
+    "types": "dist.es/videoresize.d.ts",
     "scripts": {
-        "build": "tsc -p tsconfig.es.json && tsc -p tsconfig.browser.json && tsc -p tsconfig.commonjs.json"
+        "build": "tsc -p tsconfig.es.json && tsc -p tsconfig.browser.json && tsc -p tsconfig.commonjs.json",
+	"prepublish": "build"
     },
     "author": "Daniil Makeev <daniil-makeev@yandex.ru>",
     "license": "ISC",

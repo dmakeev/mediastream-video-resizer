@@ -1,5 +1,5 @@
 node_modules
-dist.browser/**/*
-dist.commonjs/**/*
-dist.es/**/*
+dist.es
+dist.commonjs
+dist.browser
 package-lock.json
