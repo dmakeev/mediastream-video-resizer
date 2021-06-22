@@ -1,10 +1,9 @@
 {
     "compilerOptions": {
-        "baseUrl": ".",
+        "baseUrl": "./src",
         "outDir": "./dist.browser",
-        "module": "es2015",
-        "moduleResolution": "node",
-        "target": "es6",
+        "module": "es6",
+        "target": "es5",
         "lib": ["es2016", "dom"]
     },
     "include": ["./src/**/*"]

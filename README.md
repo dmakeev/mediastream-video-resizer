@@ -1,6 +1,6 @@
 # MediaStream video resizer
 
-A browser-based resize of video tracks in MediaStreams
+A browser-based resize of video tracks in MediaStreams.
 Mostly used in WebRTC projects to generate an exact size of the video and to control the fps.
 
 ## Getting started
