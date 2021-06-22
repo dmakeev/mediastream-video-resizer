@@ -1,6 +1,6 @@
 {
     "name": "mediastream-video-resizer",
-    "version": "0.2.6",
+    "version": "0.2.7",
     "description": "Resize video tracks in MediaStreams",
     "main": "dist.module/videoresize.js",
     "types": "dist.module/videoresize.d.ts",
