@@ -26,3 +26,10 @@ const resizedStream: MediaStream = videoResizer.start(mediaStream, 'userVideo', 
 // Stop the resize process
 videoResizer.stop('userVideo');
 ```
+
+### Old school
+If you don't use any package manager, a separate .js file is available too - feel free to include it in your html
+```html
+<script src="https://dmakeev.github.io/mediastream-video-resizer/dist.browser/videoresize.js"></script>
+```
+and after this you can use VideoResizer class as in the example above (no "require" needed, of course).
