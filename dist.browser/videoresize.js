@@ -36,6 +36,10 @@ var VideoResizer = /** @class */ (function () {
     VideoResizer.prototype.start = function (inputStream, key, width, height, fps) {
         var self = this;
         // Check if any video track exists
+        if (!inputStream || !inputStream.getVideoTracks) {
+            console.warn('Incorrect mediaStream is received', inputStream);
+            return inputStream;
+        }
         var videoTrack = inputStream.getVideoTracks().find(function (track) { return track.enabled; });
         if (!videoTrack || !videoTrack.enabled) {
             console.warn('There is no video tracks in the input MediaStream');

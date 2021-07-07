@@ -87,6 +87,10 @@ export class VideoResizer {
     start(inputStream: MediaStream, key: string, width: number, height: number | null, fps: number) {
         const self = this;
         // Check if any video track exists
+        if (!inputStream || !inputStream.getVideoTracks) {
+            console.warn('Incorrect mediaStream is received', inputStream);
+            return inputStream;
+        }
         const videoTrack: MediaStreamTrack | undefined = inputStream.getVideoTracks().find((track) => track.enabled);
         if (!videoTrack || !videoTrack.enabled) {
             console.warn('There is no video tracks in the input MediaStream');
