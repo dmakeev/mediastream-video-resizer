@@ -186,12 +186,14 @@ export class VideoResizer {
             self.privateStopMediaStream(resizer.outputStream);
         }
         // Remove html elements
-        if (resizer.video) {
-            document.body.removeChild(resizer.video);
-        }
-        if (resizer.canvas) {
-            document.body.removeChild(resizer.canvas);
-        }
+        try {
+            if (resizer.video) {
+                document.body.removeChild(resizer.video);
+            }
+            if (resizer.canvas) {
+                document.body.removeChild(resizer.canvas);
+            }
+        } catch (e) {}
         delete self.resizers[key];
     }
 

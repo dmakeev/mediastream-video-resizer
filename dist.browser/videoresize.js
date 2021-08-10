@@ -131,12 +131,15 @@ var VideoResizer = /** @class */ (function () {
             self.privateStopMediaStream(resizer.outputStream);
         }
         // Remove html elements
-        if (resizer.video) {
-            document.body.removeChild(resizer.video);
+        try {
+            if (resizer.video) {
+                document.body.removeChild(resizer.video);
+            }
+            if (resizer.canvas) {
+                document.body.removeChild(resizer.canvas);
+            }
         }
-        if (resizer.canvas) {
-            document.body.removeChild(resizer.canvas);
-        }
+        catch (e) { }
         delete self.resizers[key];
     };
     /**
